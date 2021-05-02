@@ -1,0 +1,8 @@
+<h1> All Songs </h1>
+
+<% @songs.each do |song| %>
+<div id="song-<%= song.id %>"> 
+    <%= link_to "#{song.artist_name} - #{song.title}", song_path(song) %>
+</div>
+
+<% end %>
